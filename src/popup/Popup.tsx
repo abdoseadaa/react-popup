@@ -1,4 +1,4 @@
-import usePopupStore from './stores/popup.store'
+import {usePopupStore} from './stores/popup.store'
 import PopupView from './components/PopupView'
 
 

@@ -18,9 +18,12 @@ type IPopupStore = {
   closeLatest : () => void
 }
 
-export const createPopup = (Element : JSX.Element , props?: DiveAttr) => {
+ const createPopup = (Element : JSX.Element , props?: DiveAttr) => {
   return  usePopupStore.getState().create(Element , props)
 }
+
+
+export default createPopup
 
 const usePopupStore = create<IPopupStore>((set) => ({
 
@@ -87,7 +90,7 @@ const usePopupStore = create<IPopupStore>((set) => ({
 }));
 
 
-export default usePopupStore
+export  {usePopupStore}
 
 
 

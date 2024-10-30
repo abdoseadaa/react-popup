@@ -1,6 +1,6 @@
 import { AiOutlineClose } from "react-icons/ai"; 
 import React, { useEffect } from "react"
-import usePopupStore, { IPopup } from "../stores/popup.store"
+import  {  usePopupStore, IPopup } from "../stores/popup.store"
 import { cn } from "../../config/cn.helper"
 
 

@@ -1,4 +1,4 @@
-import { createPopup } from "./popup/stores/popup.store"
+import { createPopup } from "airpop"
 import Temp from "./Temp"
 
 export default function Test() {
