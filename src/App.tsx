@@ -1,6 +1,8 @@
-import { createPopup, Popup } from "airpop"
+// import { createPopup } from "airpop"
 import Temp from "./Temp"
 import Test from "./Test"
+import Popup from "./popup/Popup"
+import createPopup from "./popup/stores/popup.store"
 
 function App() {
 

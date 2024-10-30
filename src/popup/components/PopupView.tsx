@@ -45,16 +45,16 @@ export default function PopupView(props : Props) {
         style={{zIndex}}
         {...props.data.props} 
         className={cn(
-        "bg-white shadow-lg p-2 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ring-1 ring-[#efefef]/50",
-        "min-w-fit min-h-fit max-w-[90vw] max-h-[90vh] w-[50vw] h-[40vh]",
-        "rounded-md p-4",
+        "bg-white shadow-lg  p-2  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ring-1 ring-[#efefef]/50",
+        "min-w-[40vw] min-h-fit max-w-[90vw] max-h-[90vh]  w-fit",
+        "rounded-md p-4 pt-3",
         props.data.props?.className
       )}>
 
 
       { React.cloneElement<{ item?: any , close : () => void}>( Element, { close : onClose  } )}
 
-      <button onClick={onClose} className=" absolute top-3 right-3 border-border px-2 py-1  rounded-md">
+      <button onClick={onClose} className="absolute top-3 right-3 border-border px-2 py-1  rounded-md">
         <AiOutlineClose />
       </button>
 
