@@ -60,7 +60,7 @@ export default function PopupView(props : Props) {
 
     </div>
 
-    <div className="w-full h-full backdrop-blur-[1px] absolute top-0 left-0" />  
+    <div className="w-full h-full backdrop-blur-[1px] absolute top-0 left-0 bg-black/5" />  
   
   </>
   )

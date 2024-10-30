@@ -1,4 +1,4 @@
-// import { createPopup } from "airpop"
+// import { createPopup, Popup } from "airpop"
 import Temp from "./Temp"
 import Test from "./Test"
 import Popup from "./popup/Popup"
