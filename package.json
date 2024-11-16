@@ -1,6 +1,6 @@
 {
   "name": "airpop",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "type": "module",
   "license": "MIT",
   "main": "dist/airpop.cjs.js",
@@ -8,13 +8,17 @@
   "types": "types/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -p tsconfig.build.json && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "airpop": "^0.0.3",
+    "@headlessui/react": "^2.2.0",
+    "@radix-ui/react-icons": "^1.3.1",
+    "@radix-ui/react-select": "^2.1.2",
+    "airpop": "^0.0.6",
     "clsx": "^2.1.1",
+    "lucide-react": "^0.454.0",
     "path": "^0.12.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -24,7 +28,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
-    "@types/node": "^22.8.4",
+    "@types/node": "^22.9.0",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react-swc": "^3.5.0",

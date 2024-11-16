@@ -7,7 +7,7 @@ export default function Temp(props : any) {
   
   return (
     <div>
-       <button onClick={() => props.close()}> close tem</button>    
+      <button onClick={() => props.close()}> close tem</button>    
     </div>
   )
 }

@@ -54,13 +54,13 @@ export default function PopupView(props : Props) {
 
       { React.cloneElement<{ item?: any , close : () => void}>( Element, { close : onClose  } )}
 
-      <button onClick={onClose} className="absolute top-3 right-3 border-border px-2 py-1  rounded-md">
+      <button onClick={onClose} className="absolute top-3 right-3 border-border px-2 py-1 rounded-md">
         <AiOutlineClose />
       </button>
 
     </div>
 
-    <div className="w-full h-full backdrop-blur-[1px] absolute top-0 left-0 bg-black/5" />  
+    <div className="w-full h-full backdrop-blur-[1px] absolute top-0 left-0 bg-black/50" style={{zIndex : zIndex - 1}}/>  
   
   </>
   )
