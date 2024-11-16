@@ -1,4 +1,4 @@
-.popup-container {
+._airpop-popup-container {
   background-color: white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 16px;
@@ -15,27 +15,24 @@
   border-radius: 8px;
 }
 
-.popup-close-button {
+._airpop-popup-close-button {
   position: absolute;
   top: 12px;
   right: 12px;
-  border: 1px solid #cccccc;
   padding: 8px;
   border-radius: 4px;
   background-color: transparent;
   cursor: pointer;
 }
 
-.popup-close-button:hover {
-  background-color: #f0f0f0;
-}
 
-.popup-backdrop {
+
+._airpop-popup-backdrop {
   width: 100%;
   height: 100%;
   backdrop-filter: blur(1px);
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(148, 148, 148, 0.3);
 }
