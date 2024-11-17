@@ -1,4 +1,5 @@
 import { IPopup } from "../stores/popup.store";
+import "./styles.css";
 type Props = {
     data: IPopup;
     order: number;
