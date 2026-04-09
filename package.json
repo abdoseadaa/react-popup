@@ -1,6 +1,6 @@
 {
   "name": "airpop",
-  "version": "0.0.11",
+  "version": "2.0.0",
   "type": "module",
   "license": "MIT",
   "main": "dist/airpop.cjs.js",
@@ -20,8 +20,8 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.454.0",
     "path": "^0.12.7",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "react-icons": "^5.3.0",
     "tailwind-merge": "^2.5.4",
     "zustand": "^5.0.0"
@@ -29,8 +29,8 @@
   "devDependencies": {
     "@eslint/js": "^9.13.0",
     "@types/node": "^22.9.0",
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.1",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.13.0",
