@@ -3,7 +3,7 @@ import { create } from "zustand";
 
 export type IPopup = {
   id: string;
-  Element: JSX.Element;
+  Element: React.JSX.Element;
   close: (id: string) => void;
   props?: DiveAttr;
 };
@@ -11,12 +11,12 @@ export type IPopup = {
 type DiveAttr = HTMLAttributes<HTMLDivElement>;
 type IPopupStore = {
   popups: IPopup[];
-  create: (Element: JSX.Element, props?: DiveAttr) => (data?: any) => void;
+  create: (Element: React.JSX.Element, props?: DiveAttr) => (data?: any) => void;
   closeAll: () => void;
   closeLatest: () => void;
 };
 
-const createPopup = (Element: JSX.Element, props?: DiveAttr) => {
+const createPopup = (Element: React.JSX.Element, props?: DiveAttr) => {
   return usePopupStore.getState().create(Element, props);
 };
 
@@ -25,7 +25,7 @@ export default createPopup;
 const usePopupStore = create<IPopupStore>((set) => ({
   popups: [],
 
-  create: (Element: JSX.Element, props?: DiveAttr) => {
+  create: (Element: React.JSX.Element, props?: DiveAttr) => {
     const id = uuid();
 
     const open = (data?: any) => {
@@ -36,7 +36,7 @@ const usePopupStore = create<IPopupStore>((set) => ({
 
       if (alreadyOpen) return; // Prevent adding a duplicate popup
 
-      let CopyElement: JSX.Element;
+      let CopyElement: React.JSX.Element;
       if (data) {
         CopyElement = React.cloneElement<{ item?: any }>(Element, { item: data });
       } else {
